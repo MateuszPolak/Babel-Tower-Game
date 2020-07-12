@@ -1,0 +1,67 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:layout_margin = "16dp"
+    tools:context = ".MainActivity">
+    <EditText
+        android:id = "@+id/etIP"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint = "IP-Address"
+        android:inputType = "text" />
+    <EditText
+        android:id = "@+id/etPort"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/etIP"
+        android:hint = "Port No"
+        android:inputType = "number" />
+    <Button
+        android:id = "@+id/btnConnect"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/etPort"
+        android:layout_gravity = "center"
+        android:layout_marginTop = "16dp"
+        android:text = "Connect To Server" />
+    <EditText
+        android:id = "@+id/PlayerName"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/btnConnect"
+        android:hint = "Player name"
+        android:inputType = "text" />
+    <Button
+        android:id = "@+id/btnName"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_below = "@+id/PlayerName"
+        android:layout_gravity = "center"
+        android:layout_marginTop = "16dp"
+        android:text = "Set name" />
+    <TextView
+        android:id = "@+id/tvMessages"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_above = "@+id/etMessage"
+        android:layout_below = "@+id/btnName"
+        android:inputType = "textMultiLine"
+        android:textAppearance = "@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id = "@+id/etMessage"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_above = "@+id/btnSend"
+        android:hint = "Enter Message"
+        android:inputType = "text" />
+
+    <Button
+        android:id = "@+id/btnSend"
+        android:layout_width = "match_parent"
+        android:layout_height = "200dp"
+        android:layout_alignParentBottom = "true"
+        android:text = "DROP" />
+</RelativeLayout>
